@@ -158,7 +158,7 @@ section.metodo>.container {
 
 .metodo .metodo-text {
     flex-basis: 50%;
-    padding: 30px;
+    padding: 80px 30px 0 30px;
 }
 
 .metodo .metodo-text h1 {
@@ -166,13 +166,14 @@ section.metodo>.container {
     font-size: 4em;
 }
 
-.metodo .metodo-text p {
+.metodo .metodo-text p:nth-of-type(1),
+.metodo .metodo-text p:nth-of-type(2) {
     margin: 50px 0;
     font-size: 1.5em;
     color: #ccc;
 }
 
-.metodo .metodo-text p a {
+.metodo .metodo-text p.btnConsulta2 a {
     text-decoration: none;
     font-size: 1em !important;
     color: #003731 !important;

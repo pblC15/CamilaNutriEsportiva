@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' conteot=''>
     <title>Camila Nutri Esportiva | Home</title>
+    <link rel='shortcut icon' type='image-x/png' href='imgs/logo/LOGOTIPO-menor.jpg'>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/boot.css">
 
@@ -32,7 +36,7 @@
                         <a href="#plans">Planos</a>
                     </li>
                     <li>
-                        <a class="btnConsulta" href="#">Agendar Consulta</a>
+                        <a class="btnConsulta" href="#plans" target="_blank">Agendar Consulta</a>
                     </li>
                 </ul>
             </nav>
@@ -66,7 +70,7 @@
                 <h1>Meu nome é Camila</h1>
                 <p>Minha missão é te proporcionar um estilo de vida saudável</p>
                 <p>Vida saudável sem complicações e com resultados de verdade.</p>
-                <p class="btnConsulta2"><a href="#">Agendar Consulta</a></p>
+                <p class="btnConsulta2"><a href="#plans">Agendar Consulta</a></p>
             </div>
         </div>
     </section>
@@ -99,7 +103,7 @@
                 <h1>Metodologia</h1>
                 <p>Cada pessoa vive em uma realidade única, e cada uma precisa de um plano alimentar condizente com seu dia-a-dia, objetivos e estilo de vida.</p>
                 <p>Com base em nossa consulta conseguirei entender o seu contexto de te prescrever um plano alimentar que irá potencializar os seus resultados e te deixar mais próximo de seus objetivos.</p>
-                <p class="btnConsulta2"><a href="#">Ver Planos</a></p>
+                <p class="btnConsulta2"><a href="#plans">Ver Planos</a></p>
             </div>
             <div class="metodo-img">
                 <img src="imgs/logo/LOGOTIPO-menor.jpg">
@@ -123,7 +127,7 @@
         <div class="motivation-text">
             <h1>Evolua!</h1>
             <p>Adquira já seu plano de consulta on-line e comece hoje a sua mudança de estilo de vida!</p>
-            <p class="btnConsulta2"><a href="#">Enviar o Whatsapp</a></p>
+            <p class="btnConsulta2"><a href="https://api.whatsapp.com/send?phone=5516991147838">Enviar o Whatsapp</a></p>
         </div>
         <div class="motivation-img">
             <img src="imgs/banner/banner2.jpg">
@@ -259,13 +263,13 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('header nav a').click(function(e) {
+            $('header nav a, .btnConsulta2 a').click(function(e) {
                 e.preventDefault();
                 var id = $(this).attr('href'),
                     targetOffset = $(id).offset().top,
                     menuHeight = $("header.header_contant").innerHeight();
                 $('html, body').animate({
-                    scrollTop: targetOffset - menuHeight - 100
+                    scrollTop: targetOffset - menuHeight - 30
                 }, 1000);
 
             });
@@ -298,8 +302,8 @@
 
             /*Botão fixo de redes socias*/
             var options = {
-                whatsapp: "(61) 98645-2256", // WhatsApp number
-                instagram: "pablo cassiano", // Instagram username
+                whatsapp: "5516991147838", // WhatsApp number
+                instagram: "camilanutriesportiva", // Instagram username
                 call_to_action: "Envia-nos uma mensagem", // Call to action
                 button_color: "#A8CE50", // Color of button
                 position: "right", // Position may be 'right' or 'left'
