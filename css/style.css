@@ -1,383 +1,620 @@
-header.header_contant {
-    padding: 10px 2%;
-    width: 100%;
-    background-color: #003731;
-}
-
-.menu-fixo {
-    position: fixed;
-    z-index: 999;
-    padding: 0px 2% !important;
-    opacity: 0.9;
-}
-
-header.header_contant>.container {
-    display: flex;
-}
-
-header.header_contant .logo {
-    flex-basis: 250px;
-    width: 250px;
-}
-
-header.header_contant .logo img {
-    width: 100%;
-}
-
-nav.menu-desktop {
-    flex-basis: calc(100% - 250px);
-    justify-content: flex-end;
-    display: flex;
-}
-
-.menu-desktop ul {
-    list-style: none;
-    display: flex;
-    align-items: stretch;
-}
-
-.menu-desktop ul li {
-    display: flex;
-    align-items: center;
-}
-
-.menu-desktop ul li a {
-    padding: 0 26px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-desktop ul li a:hover {
-    color: #a7d066;
-    padding-bottom: 5px;
-}
-
-nav.menu-mobile {
-    display: none;
-}
-
-
-/*PRINCIPAL APRESENTAÇÃO*/
-
-section.main .container {
-    display: flex;
-    padding: 20px 2%;
-}
-
-.main .main-img {
-    flex-basis: 50%;
-    height: 100%;
-    width: 900px;
-}
-
-.main .main-img img {
-    width: 100%;
-    height: 650px;
-    border-radius: 20px;
-}
-
-.main .main-content {
-    flex-basis: 50%;
-    padding: 90px;
-    text-align: left;
-}
-
-.main .main-content h1 {
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #003731;
-}
-
-.main .main-content p {
-    margin: 20px 0;
-}
-
-.main .main-content p:nth-of-type(1) {
-    font-size: 4em;
-    margin: 20px 0;
-    font-weight: 300;
-    font-family: "Lexend";
-}
-
-.main .main-content p:nth-of-type(2) {
-    margin-bottom: 40px;
-    font-size: 1.2em;
-}
-
-.main .main-content p a {
-    color: #003731;
-    text-decoration: none;
-}
-
-
-/*ARTICLE 1*/
-
-.article1 {
-    width: 100%;
-    height: 100%;
-    margin: 50px 0;
-    background-image: url("../imgs/banner/banner3.jpg");
-    background-position: center 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.article1 .container {
-    display: flex;
-}
-
-.article1 .article-content {
-    color: #FFF;
-    flex-basis: calc(100% / 3);
-    padding: 20px;
-    text-align: center;
-    padding: 80px;
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-.article1 .article-content p {
-    margin-bottom: 20px;
-}
-
-
-/*METODOLOGIA*/
-
-section.metodo {
-    background-color: #0c201f;
-    color: #000;
-}
-
-section.metodo>.container {
-    display: flex;
-}
-
-.metodo .metodo-text {
-    flex-basis: 50%;
-    padding: 80px 30px 0 30px;
-}
-
-.metodo .metodo-text h1 {
-    color: #a7d066;
-    font-size: 4em;
-}
-
-.metodo .metodo-text p:nth-of-type(1),
-.metodo .metodo-text p:nth-of-type(2) {
-    margin: 50px 0;
-    font-size: 1.5em;
-    color: #ccc;
-}
-
-.metodo .metodo-text p.btnConsulta2 a {
-    text-decoration: none;
-    font-size: 1em !important;
-    color: #003731 !important;
-}
-
-.metodo .metodo-img {
-    flex-basis: 50%;
-    height: auto;
-    padding: 50px;
-}
-
-.metodo .metodo-img img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 1px 1px 15px 1px #000;
-    border-radius: 20px;
-}
-
-
-/*ARTICLE 2*/
-
-article.article2 {
-    background-image: url("../imgs/banner/banner2.jpg");
-    background-position: 100% top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 400px;
-    width: 100%;
-    background-attachment: fixed;
-    margin: 20px 0;
-    text-align: center;
-    position: relative;
-}
-
-article.article2 .container {
-    padding: 150px;
-    position: relative;
-}
-
-article.article2 .article2_contant_text h1 {
-    font-family: "PermanentMarker" !important;
-    color: #FFF;
-    font-size: 3em;
-    color: #FFF;
-}
-
-
-/*SESSÃO MOTIVACIONAL*/
-
-section.motivation {
-    margin: 80px 0 100px 0;
-    display: flex;
-}
-
-.motivation-text {
-    flex-basis: 50%;
-    padding: 150px 80px 0 80px;
-}
-
-.motivation-text h1 {
-    font-size: 2.9em;
-    color: #003731;
-}
-
-.motivation-text p:nth-of-type(1) {
-    margin: 40px 0;
-    font-size: 1.2em;
-    line-height: 34px;
-}
-
-.motivation-text p a {
-    text-decoration: none;
-    color: #003731;
-}
-
-.motivation-img {
-    flex-basis: 50%;
-    height: 500px;
-    background-color: #003731;
-    padding: 50px;
-    text-align: center;
-}
-
-.motivation-img img {
-    width: 80%;
-    height: 100%;
-    position: relative;
-    top: 85px;
-    left: 0;
-    box-shadow: 1px 1px 5px #000;
-    border-radius: 5px;
-}
-
-
-/*PLANOS*/
-
-section.plans {
-    margin-top: 150px;
-}
-
-section.plans article {
-    margin: 100px 0;
-}
-
-section.plans .plans-text {
-    text-align: center;
-    margin: 20px;
-}
-
-section.plans .plans-text h1 {
-    font-size: 4em;
-    color: #a7d066;
-    font-weight: 300;
-}
-
-section.plans .plans-text p {
-    font-size: 1.1em;
-    color: #ccc;
-    margin: 20px 0;
-}
-
-section.plans .plans_content {
-    display: flex;
-    padding: 0 100px;
-}
-
-section.plans .plans_content .plans_content_div {
-    flex-basis: calc(100% / 3 - 60px);
-    background-color: #003731;
-    height: 650px;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 0px 70px 70px 0;
-    text-align: center;
-}
-
-.plans_content_div h2 {
-    font-size: 0.7em;
-    color: #ccc;
-}
-
-.plans_content_div p {
-    font-size: 3em;
-    color: #a7d066;
-    margin-top: 20px;
-    font-weight: 900;
-}
-
-.plans_content_div ul {
-    padding: 10px;
-    list-style: none;
-    margin-bottom: 50px;
-}
-
-.plans_content_div ul li {
-    padding: 5px;
-    margin: 10px 0;
-    font-size: 1em;
-    font-weight: 600;
-    color: #ccc;
-}
-
-.plans_content_div .btn3 {
-    font-size: 1em;
-    padding: 15px 20px;
-    margin-top: 70px;
-    /* border-radius: 0 10px 10px 0; */
-    background-color: #a7d066;
-    color: #003731;
-    font-weight: 300;
-    text-decoration: none;
-}
-
-.plans_content_div .btn3:hover {
-    border: 3px solid #fff;
-    background-color: #003731;
-    color: #a7d066;
-    font-weight: 900;
-}
-
-
-/*FOOTER*/
-
-footer {
-    padding: 60px 2%;
-    background-color: #003731;
-}
-
-footer>.container {
-    display: flex;
-}
-
-footer .footer-img {
-    flex-basis: 50%;
-    align-items: flex-end;
-}
-
-footer .footer-text {
-    flex-basis: 50%;
-    text-align: center;
-    padding: 60px 0 0 50px;
-}
-
-footer .footer-text p {
-    color: #ccc;
-    font-size: 0.8em;
-}
+    header.header_contant {
+        padding: 10px 2%;
+        width: 100%;
+        background-color: #003731;
+    }
+    
+    .menu-fixo {
+        position: fixed;
+        z-index: 999;
+        padding: 0px 2% !important;
+        opacity: 0.9;
+    }
+    
+    header.header_contant>.container {
+        display: flex;
+    }
+    
+    header.header_contant .logo {
+        flex-basis: 250px;
+        width: 250px;
+    }
+    
+    header.header_contant .logo img {
+        width: 100%;
+    }
+    
+    nav.menu-desktop {
+        flex-basis: calc(100% - 250px);
+        justify-content: flex-end;
+        display: flex;
+    }
+    
+    .menu-desktop ul {
+        list-style: none;
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .menu-desktop ul li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-desktop ul li a {
+        padding: 0 26px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .menu-desktop ul li a:hover {
+        color: #a7d066;
+        padding-bottom: 5px;
+    }
+    
+    nav.menu-mobile {
+        position: relative;
+        display: none;
+    }
+    
+    .menu-mobile .submenuMobile {
+        list-style: none;
+        width: 300px;
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 999;
+        background-color: red;
+    }
+    
+    .menu-mobile .submenuMobile li {
+        padding: 20px;
+    }
+    
+    .menu-mobile .submenuMobile li a {
+        text-decoration: none;
+    }
+    /*PRINCIPAL APRESENTAÇÃO*/
+    
+    section.main .container {
+        display: flex;
+        padding: 20px 2%;
+    }
+    
+    .main .main-img {
+        flex-basis: 50%;
+        height: 100%;
+        width: 900px;
+    }
+    
+    .main .main-img img {
+        width: 100%;
+        height: 650px;
+        border-radius: 8px;
+    }
+    
+    .main .main-content {
+        flex-basis: 50%;
+        padding: 60px 60px 200px 60px;
+        text-align: left;
+    }
+    
+    .main .main-content h1 {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #003731;
+    }
+    
+    .main .main-content p {
+        margin: 20px 0;
+    }
+    
+    .main .main-content p:nth-of-type(1) {
+        font-size: 4em;
+        margin: 20px 0;
+        font-weight: 300;
+        font-family: "Lexend";
+    }
+    
+    .main .main-content p:nth-of-type(2) {
+        margin-bottom: 40px;
+        font-size: 1.2em;
+    }
+    
+    .main .main-content p a {
+        color: #003731;
+        text-decoration: none;
+    }
+    /*ARTICLE 1*/
+    
+    .article1 {
+        width: 100%;
+        height: 100%;
+        margin: 50px 0;
+        background-image: url("../imgs/banner/banner3.jpg");
+        background-position: center 30%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .article1 .container {
+        display: flex;
+    }
+    
+    .article1 .article-content {
+        color: #FFF;
+        flex-basis: calc(100% / 3);
+        padding: 20px;
+        text-align: center;
+        padding: 80px;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    
+    .article1 .article-content p {
+        margin-bottom: 20px;
+    }
+    /*METODOLOGIA*/
+    
+    section.metodo {
+        background-color: #0c201f;
+        color: #000;
+    }
+    
+    section.metodo>.container {
+        display: flex;
+    }
+    
+    .metodo .metodo-text {
+        flex-basis: 50%;
+        padding: 80px 30px 0 30px;
+    }
+    
+    .metodo .metodo-text h1 {
+        color: #a7d066;
+        font-size: 4em;
+    }
+    
+    .metodo .metodo-text p:nth-of-type(1),
+    .metodo .metodo-text p:nth-of-type(2) {
+        margin: 50px 0;
+        font-size: 1.5em;
+        color: #ccc;
+    }
+    
+    .metodo .metodo-text p.btnConsulta2 a {
+        text-decoration: none;
+        font-size: 1em !important;
+        color: #003731 !important;
+    }
+    
+    .metodo .metodo-img {
+        flex-basis: 50%;
+        height: auto;
+        padding: 50px;
+    }
+    
+    .metodo .metodo-img img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 1px 15px 1px #000;
+        border-radius: 20px;
+    }
+    /*ARTICLE 2*/
+    
+    article.article2 {
+        background-image: url("../imgs/banner/banner2.jpg");
+        background-position: 100% top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 400px;
+        width: 100%;
+        background-attachment: fixed;
+        margin: 20px 0;
+        text-align: center;
+        position: relative;
+    }
+    
+    article.article2 .container {
+        padding: 150px;
+        position: relative;
+    }
+    
+    article.article2 .article2_contant_text h1 {
+        font-family: "PermanentMarker" !important;
+        color: #FFF;
+        font-size: 3em;
+        color: #FFF;
+    }
+    /*SESSÃO MOTIVACIONAL*/
+    
+    section.motivation {
+        margin: 80px 0 100px 0;
+        display: flex;
+    }
+    
+    .motivation-text {
+        flex-basis: 50%;
+        padding: 100px 80px 0px 100px;
+    }
+    
+    .motivation-text h1 {
+        font-size: 2.9em;
+        color: #003731;
+    }
+    
+    .motivation-text p:nth-of-type(1) {
+        margin: 40px 0;
+        font-size: 1.2em;
+        line-height: 34px;
+    }
+    
+    .motivation-text p a {
+        text-decoration: none;
+        color: #003731;
+    }
+    
+    .motivation-img {
+        flex-basis: 50%;
+        height: 500px;
+        background-color: #003731;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .motivation-img img {
+        width: auto;
+        height: 100%;
+        position: relative;
+        top: 85px;
+        left: 0;
+        box-shadow: 1px 1px 5px #000;
+        border-radius: 5px;
+    }
+    /*PLANOS*/
+    
+    section.plans {
+        margin-top: 150px;
+    }
+    
+    section.plans article {
+        margin: 100px 0;
+        padding: 20px 2%;
+    }
+    
+    section.plans .plans-text {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    section.plans .plans-text h1 {
+        font-size: 4em;
+        color: #a7d066;
+        font-weight: 300;
+    }
+    
+    section.plans .plans-text p {
+        font-size: 1.1em;
+        color: #ccc;
+        margin: 20px 0;
+    }
+    
+    section.plans .plans_content {
+        display: flex;
+    }
+    
+    section.plans .plans_content .plans_content_div {
+        flex-basis: calc(100% / 2 - 80px);
+        background-color: #003731;
+        height: 650px;
+        max-width: 350px !important;
+        padding: 40px 10px;
+        margin: 30px auto;
+        border-radius: 0px 70px 70px 0;
+        text-align: center;
+    }
+    
+    .plans_content_div h2 {
+        font-size: 0.7em;
+        color: #ccc;
+    }
+    
+    .plans_content_div p {
+        font-size: 3em;
+        color: #a7d066;
+        margin-top: 20px;
+        font-weight: 900;
+    }
+    
+    .plans_content_div ul {
+        padding: 10px;
+        list-style: none;
+        margin: 30px 0 50px;
+    }
+    
+    .plans_content_div ul li {
+        padding: 5px;
+        margin: 10px 0;
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #ccc;
+    }
+    
+    .plans_content_div .btn3 {
+        font-size: 1em;
+        padding: 15px 20px;
+        margin-top: 70px;
+        /* border-radius: 0 10px 10px 0; */
+        background-color: #a7d066;
+        color: #003731;
+        font-weight: 300;
+        text-decoration: none;
+    }
+    
+    .plans_content_div .btn3:hover {
+        border: 3px solid #fff;
+        background-color: #003731;
+        color: #a7d066;
+        font-weight: 900;
+    }
+    /*FOOTER*/
+    
+    footer {
+        padding: 60px 2%;
+        background-color: #003731;
+    }
+    
+    footer>.container {
+        display: flex;
+    }
+    
+    footer .footer-img {
+        flex-basis: 50%;
+        align-items: flex-end;
+    }
+    
+    footer .footer-text {
+        flex-basis: 50%;
+        text-align: center;
+        padding: 60px 0 0 50px;
+    }
+    
+    footer .footer-text p {
+        color: #ccc;
+        font-size: 0.8em;
+    }
+    /*ANIMATE*/
+    
+    .anime {
+        opacity: 0.5;
+        transform: translateY(30px);
+        transition: .3s;
+    }
+    
+    .anime-start {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    /*MEDIA QUERYS*/
+    /*1024px*/
+    
+    @media (max-width:64em) {
+        .main .main-content p:nth-of-type(1) {
+            font-size: 3em;
+        }
+        .main .main-content {
+            padding: 60px 10px 200px 60px !important;
+        }
+    }
+    /*960px*/
+    
+    @media (max-width: 60em) {
+        .menu-desktop {
+            display: none !important;
+        }
+        .menu-mobile {
+            display: flex !important;
+        }
+        .menu-fixo {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            z-index: 999;
+            padding: 0px 2% !important;
+            opacity: 1;
+        }
+        section.main {
+            position: relative !important;
+            top: 0 !important;
+        }
+        .menu-mobile {
+            display: flex;
+            align-items: flex-end;
+        }
+        section.main .container {
+            flex-wrap: wrap;
+            text-align: center;
+            flex-direction: column;
+        }
+        .main .main-content {
+            flex-basis: 100%;
+            padding: 60px 10px 0px 60px !important;
+            text-align: center;
+        }
+        .main .main-img {
+            flex-basis: 100%;
+            height: 100%;
+            width: 100%;
+        }
+        .main .main-img img {
+            width: 80%;
+        }
+        .main .main-content p {
+            margin: 20px auto;
+        }
+        /*ARTICLE*/
+        .article1 {
+            margin: 50px 0 0 0;
+        }
+        .article1 .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .article1 .article-content {
+            color: #FFF;
+            flex-basis: 100%;
+            padding: 20px;
+            text-align: center;
+            padding: 80px;
+            font-size: 1.5em;
+            font-weight: 600;
+            border-bottom: 4px solid #CCC;
+        }
+        /*METODOS*/
+        section.metodo>.container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 0px 50px 0px !important;
+        }
+        .metodo .metodo-text {
+            flex-basis: 100%;
+            padding: 80px 30px 0 30px;
+        }
+        .metodo .metodo-img {
+            flex-basis: 100%;
+            height: auto;
+            padding: 50px;
+            display: none;
+        }
+        /*SESSÃO MOTIVACIONAL*/
+        section.motivation {
+            flex-wrap: wrap;
+            padding: 0 2%;
+            margin: 0px 0 100px 0;
+        }
+        .motivation-text {
+            flex-basis: 100%;
+            padding: 50px;
+            background-color: #003731;
+            border-bottom: 4px solid #ccc;
+            text-align: center;
+        }
+        .motivation-text h1 {
+            font-size: 2.9em;
+            color: #FFF;
+            text-shadow: 1px 1px 1px 1px #000;
+        }
+        .motivation-text p:nth-of-type(1) {
+            color: #a7d066;
+            width: 100%;
+            margin: 20px auto;
+            font-size: 1.4em;
+        }
+        .motivation-text p:nth-of-type(2) {
+            margin: 0 auto;
+        }
+        .motivation-img {
+            flex-basis: 100%;
+            height: 500px;
+            background-color: #003731;
+            padding: 50px;
+            text-align: center;
+        }
+        .motivation-img img {
+            position: relative;
+            top: 85px;
+            left: 0;
+            box-shadow: 1px 1px 5px #000;
+            border-radius: 5px;
+        }
+        /**/
+        /*FOOTER*/
+        footer>.container {
+            flex-wrap: wrap;
+        }
+        footer .footer-img {
+            flex-basis: 100%;
+            text-align: center;
+        }
+        footer .footer-text {
+            flex-basis: 100%;
+            max-width: 100%;
+            text-align: center;
+            padding: 60px 0 0 0px;
+        }
+    }
+    /*830px*/
+    
+    @media (max-width: 51em) {
+        .main .main-content {
+            flex-basis: 100%;
+            padding: 0 2% !important;
+            text-align: center;
+            width: 100%;
+        }
+        .metodo .metodo-text p:nth-of-type(1),
+        .metodo .metodo-text p:nth-of-type(2) {
+            font-size: 1em;
+        }
+        .btnConsulta2 {
+            margin: 0 auto;
+        }
+        .metodo .metodo-text h1 {
+            color: #a7d066;
+            font-size: 2em;
+            text-align: center;
+        }
+        .main .main-content p:nth-of-type(1) {
+            font-size: 3em;
+            margin: 20px 0;
+        }
+        section.plans .plans_content {
+            flex-wrap: wrap;
+        }
+        section.plans .plans_content .plans_content_div {
+            flex-basis: calc(100% - 80px);
+            background-color: #003731;
+            height: 650px;
+            max-width: 350px !important;
+            padding: 40px 10px;
+            margin: 30px auto;
+            border-radius: 0px 70px 70px 0;
+            text-align: center;
+        }
+    }
+    /*500px*/
+    
+    @media (max-width: 31em) {
+        .main .main-img img {
+            width: 99%;
+            height: 99%;
+        }
+        .main .main-content h1 {
+            margin: 40px 0;
+            font-size: 1.5em;
+        }
+        .main .main-content p:nth-of-type(1) {
+            font-size: 2.5em;
+        }
+        .motivation-img {
+            max-width: 100%;
+        }
+        .motivation-img img {
+            width: 100%;
+        }
+        section.plans .plans-text h1 {
+            font-size: 2em;
+        }
+        section.plans .plans-text p {
+            font-size: 0.9em;
+        }
+        footer .footer-img img {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+    }
