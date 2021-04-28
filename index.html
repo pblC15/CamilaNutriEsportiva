@@ -9,10 +9,10 @@
     <meta name='keywords' content=''>
     <meta name='author' conteot=''>
     <title>Camila Nutri Esportiva | Home</title>
+    <link type="text/css" rel="stylesheet" href="css/fonticon.css">
     <link rel='shortcut icon' type='image-x/png' href='imgs/logo/LOGOTIPO-menor.jpg'>
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/boot.css">
-
 </head>
 
 <body>
@@ -41,18 +41,22 @@
                 </ul>
             </nav>
             <nav class="menu-mobile">
-                <ul class="submenuMobile">
-                    <li>
-                        <a href="#home" style="color:#a7d066;">Home</a>
-                    </li>
-                    <li>
-                        <a href="#met">Metodologia</a>
-                    </li>
-                    <li>
-                        <a href="#plans">Planos</a>
-                    </li>
-                    <li>
-                        <a class="btnMobile" href="#plans">Agendar Consulta</a>
+                <ul>
+                    <li><span class="icon-menu" id="menuMobile"></span>
+                        <ul class="submenuMobile" id="catMobile">
+                            <li>
+                                <a href="#home" style="color:#a7d066;">Home</a>
+                            </li>
+                            <li>
+                                <a href="#met">Metodologia</a>
+                            </li>
+                            <li>
+                                <a href="#plans">Planos</a>
+                            </li>
+                            <li>
+                                <a class="btnMobile" href="#plans">Agendar Consulta</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -244,7 +248,11 @@
 
             $(window).scroll(function() {
 
-                if ($(this).scrollTop() > 30) {
+
+                var width = $(window).width();
+
+
+                if ($(this).scrollTop() > 30 && width > 861) {
 
                     menu.addClass('menu-fixo');
                     $("section.main").css({
@@ -262,6 +270,11 @@
 
 
                 }
+            });
+
+            /*Botão mobile*/
+            $("#menuMobile").on("click", function() {
+                $("#catMobile").slideToggle(800);
             });
 
 
