@@ -695,8 +695,12 @@ footer .footer-text p {
 /*390px*/
 
 @media (max-width: 25em) {
+    header.header_contant .logo {
+        flex-basis: 350px;
+        width: 350px;
+    }
     .menu-mobile .submenuMobile {
-        top: 75px;
+        top: 85px;
     }
     article.article2 .container {
         padding: 150px 0;
@@ -733,36 +737,4 @@ footer .footer-text p {
 
 /*320px*/
 
-
-/* @media (max-width:20em) {
-    article.article2 .container {
-        padding: 150px 0;
-    }
-    article.article2 .article2_contant_text h1 {
-        font-size: 2em;
-        width: 100%;
-    }
-    article.article2 {
-        background-size: 100% 100%;
-    }
-    .motivation-img {
-        padding: 0px 2% !important;
-        height: auto;
-    }
-    .motivation-img img {
-        top: 40px;
-        height: auto;
-    }
-    section.plans {
-        margin-top: 50px;
-    }
-    section.plans .plans_content .plans_content_div {
-        flex-basis: calc(100% - 20px);
-    }
-    .plans_content_div:nth-of-type(3) ul {
-        margin: 30px 0;
-    }
-    section.plans article {
-        margin: 50px 0;
-    }
-} */
+@media (max-width:20em) {}
