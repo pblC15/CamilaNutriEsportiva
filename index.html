@@ -44,16 +44,16 @@
                 <ul>
                     <li><span class="icon-menu" id="menuMobile"></span>
                         <ul class="submenuMobile" id="catMobile">
-                            <li>
+                            <li class="icon-home">
                                 <a href="#home" style="color:#a7d066;">Home</a>
                             </li>
-                            <li>
+                            <li class="icon-lifebuoy">
                                 <a href="#met">Metodologia</a>
                             </li>
-                            <li>
+                            <li class="icon-stack">
                                 <a href="#plans">Planos</a>
                             </li>
-                            <li>
+                            <li class="icon-file-text">
                                 <a class="btnMobile" href="#plans">Agendar Consulta</a>
                             </li>
                         </ul>
@@ -116,11 +116,11 @@
     </section>
 
     <!--ARTICLE 2-->
-    <article class="article2 anime">
+    <article class="article2">
         <div class="article_background">
             <div class="container">
                 <div class="article2_contant_text">
-                    <h1>Mudar é possivel </h1>
+                    <h1 class="anime">Mudar é possivel </h1>
                 </div>
             </div>
         </div>
@@ -276,7 +276,7 @@
             $("#menuMobile").on("click", function() {
 
                 $(this).toggleClass("green");
-                $("#catMobile").slideToggle(800);
+                $("#catMobile").slideToggle(300);
 
             });
 
