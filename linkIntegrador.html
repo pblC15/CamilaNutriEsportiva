@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <section class="section_contant">
+    <section class="section_contant anime1">
         <div class="container">
             <header class="header_contat">
                 <div class="header_img">
@@ -29,14 +29,43 @@
             </header>
             <div class="div_content_img">
                 <div class="imgContant">
-                    <a href="#" class="link_content"></a>
-                    <a href="#" class="link_content"></a>
-                    <a href="#" class="link_content"></a>
+                    <a href="index.html" class="link_content"></a>
+                    <a href="index.html" class="link_content"></a>
+                    <a href="index.html" class="link_content"></a>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        //Animação2 com scroll
+
+        var $target = $('.anime1'),
+            animationClass = 'anime1-start',
+            offset = $(window).height() * 3 / 4;
+
+        function animeScroll() {
+            var documentTop = $(document).scrollTop();
+
+            $target.each(function() {
+                var itemTop = $(this).offset().top;
+
+                if (documentTop > itemTop - offset) {
+                    $(this).addClass(animationClass);
+                } else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
+
+        animeScroll();
+
+        $(document).scroll(function() {
+            animeScroll();
+        });
+    </script>
 </body>
 
 </html>

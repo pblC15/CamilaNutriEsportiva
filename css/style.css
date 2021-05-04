@@ -437,12 +437,34 @@ footer .footer-text p {
 .anime {
     opacity: 0.5;
     transform: translateY(30px);
-    transition: .3s;
+    transition: .9s;
 }
 
 .anime-start {
     opacity: 1;
     transform: translateY(0);
+}
+
+.anime2 {
+    opacity: 0.5;
+    transform: translate3D( -100px, 0, 150px);
+    transition: 1s;
+}
+
+.anime2-start {
+    opacity: 1;
+    transform: translate3D(0, 0, 0);
+}
+
+.anime3 {
+    opacity: 0.5;
+    transform: translate3D( 150px, 0, 150px);
+    transition: 1s;
+}
+
+.anime3-start {
+    opacity: 1;
+    transform: translate3D(0, 0, 0);
 }
 
 
@@ -908,6 +930,9 @@ footer .footer-text p {
     }
     .div_content_img {
         height: 400px;
+    }
+    .section_contant {
+        padding: 30px 20px;
     }
 }
 

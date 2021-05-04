@@ -66,11 +66,11 @@
     <!--PRINCIPAL-->
     <section class="main" id="home">
         <div class="container">
-            <div class="main-img">
+            <div class="main-img anime2">
                 <img src="imgs/banner/banner1.jpg">
             </div>
 
-            <div class="main-content">
+            <div class="main-content anime3">
                 <h1>Meu nome é Camila</h1>
                 <p>Minha missão é te proporcionar um estilo de vida saudável</p>
                 <p>Vida saudável sem complicações e com resultados de verdade.</p>
@@ -332,6 +332,60 @@
 
 
 
+        });
+
+        $(function() {
+
+            //Animação2 com scroll
+
+            var $target = $('.anime2'),
+                animationClass = 'anime2-start',
+                offset = $(window).height() * 3 / 4;
+
+            function animeScroll2() {
+                var documentTop = $(document).scrollTop();
+
+                $target.each(function() {
+                    var itemTop = $(this).offset().top;
+
+                    if (documentTop > itemTop - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+            }
+
+            animeScroll2();
+
+            $(document).scroll(function() {
+                animeScroll2();
+            });
+            //Animação3 com scroll
+
+            var $target = $('.anime3'),
+                animationClass = 'anime3-start',
+                offset = $(window).height() * 3 / 4;
+
+            function animeScroll3() {
+                var documentTop = $(document).scrollTop();
+
+                $target.each(function() {
+                    var itemTop = $(this).offset().top;
+
+                    if (documentTop > itemTop - offset) {
+                        $(this).addClass(animationClass);
+                    } else {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+            }
+
+            animeScroll3();
+
+            $(document).scroll(function() {
+                animeScroll3();
+            });
         });
     </script>
 </body>
