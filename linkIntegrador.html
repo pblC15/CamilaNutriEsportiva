@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content=''>
+    <meta name='keywords' content=''>
+    <meta name='author' conteot=''>
+    <title>Camila Nutri Esportiva | Home</title>
+    <link type="text/css" rel="stylesheet" href="css/fonticon.css">
+    <link rel='shortcut icon' type='image-x/png' href='imgs/logo/LOGOTIPO-menor.jpg'>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/boot.css">
+</head>
+
+<body>
+    <section class="section_contant anime1">
+        <div class="container">
+            <header class="header_contat">
+                <div class="header_img">
+                    <img src="imgs/icon/foto-link.png">
+                </div>
+                <div class="header_text">
+                    <h1>Camila</h1>
+                    <p>Nutrição e Emagrecimento Sem Dieta</p>
+                </div>
+            </header>
+            <div class="div_content_img">
+                <div class="imgContant">
+                    <a href="index.html" class="link_content"></a>
+                    <a href="index.html" class="link_content"></a>
+                    <a href="index.html" class="link_content"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script>
+        //Animação2 com scroll
+
+        var $target = $('.anime1'),
+            animationClass = 'anime1-start',
+            offset = $(window).height() * 3 / 4;
+
+        function animeScroll() {
+            var documentTop = $(document).scrollTop();
+
+            $target.each(function() {
+                var itemTop = $(this).offset().top;
+
+                if (documentTop > itemTop - offset) {
+                    $(this).addClass(animationClass);
+                } else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
+
+        animeScroll();
+
+        $(document).scroll(function() {
+            animeScroll();
+        });
+    </script>
+</body>
+
+</html>
