@@ -41,7 +41,10 @@ img {
 a {
     transition: .25s ease;
 }
-
+.linkAgencia {
+    text-decoration: none;
+    color: gray;
+}
 .container {
     width: 100%;
     max-width: var(--container);
@@ -187,7 +190,7 @@ nav.menu-desktop ul {
     text-decoration: none;
     font-weight: 500;
     border-radius: 999px;
-}
+} 
 
 .menu-desktop ul li a:hover,
 .menu-desktop ul li a.active-link {
